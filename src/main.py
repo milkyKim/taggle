@@ -1,8 +1,8 @@
 from fastapi import FastAPI
+from tag import tag_router
+from resource import resource_router
 
 app = FastAPI()
 
-
-@app.get("/hello")
-def hello():
-    return {"message": "안녕하세요 파이보"}
+app.include_router(tag_router.router)
+app.include_router(resource_router.router)
