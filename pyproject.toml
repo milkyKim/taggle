@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "taggle"
+version = "0.1.0"
+description = ""
+authors = ["milkyKim <kimminji122258@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.95.2"
+uvicorn = {extras = ["standard"], version = "^0.22.0"}
+sqlalchemy = "^2.0.15"
+alembic = "^1.11.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
